@@ -1,0 +1,88 @@
+<com.ken.promotion.PromotionDetail xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/promotion_record"
+        layout="@layout/promotion_record" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/promotion_margin_left"
+        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:src="@android:color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/promotion_margin_left"
+        android:layout_marginRight="@dimen/promotion_margin_right" >
+
+        <TextView
+            android:id="@+id/promotion_trade_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:text="H-Park hair salon"
+            android:textColor="#828282" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/promotion_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="#17C9B4" >
+        </TextView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/promotion_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/promotion_margin_left"
+        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:gravity="center"
+        android:text="敦化南路一段160巷44號-3"
+        android:textColor="#828282" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/promotion_margin_left"
+        android:layout_marginRight="@dimen/promotion_margin_right" >
+
+        <TextView
+            android:id="@+id/promotion_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:text="02-12345678"
+            android:textColor="#828282" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/promotion_business_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:text="10:00 ~ 20:00"
+            android:textColor="#828282" >
+        </TextView>
+    </FrameLayout>
+
+</com.ken.promotion.PromotionDetail>
