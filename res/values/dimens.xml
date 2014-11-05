@@ -1,7 +1,10 @@
 <resources>
 
-    <!-- record item for booking activity -->
-    <dimen name="promotion_margin_left">20dp</dimen>
-    <dimen name="promotion_margin_right">20dp</dimen>
+    <!-- promotion item  -->
+    <dimen name="promotion_margin_left">23dp</dimen>
+    <dimen name="promotion_margin_right">23dp</dimen>
+    
+    <dimen name="promotion_button_margin_left">20dp</dimen>
+    <dimen name="promotion_button_margin_right">20dp</dimen>
 
 </resources>
