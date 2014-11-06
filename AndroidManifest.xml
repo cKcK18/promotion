@@ -14,7 +14,7 @@
 		android:label="@string/app_name"
 		android:theme="@style/PromotionActivity" >
 		<activity
-			android:name=".PromotionActivity"
+			android:name=".PromotionDetailActivity"
 			android:label="@string/app_name" >
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

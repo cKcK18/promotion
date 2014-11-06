@@ -15,6 +15,7 @@ public class PromotionRecord {
 	public static final String SEPARATED_STRING = ", ";
 
 	public long id; // generate from server
+	public String imageUrl;
 	public String phoneNumber;
 	public String promotion;
 	public String header;
@@ -29,8 +30,9 @@ public class PromotionRecord {
 	/*
 	 * the function is called by local and will pass to server.
 	 */
-	public PromotionRecord(String phoneNumber, String promotion, String header, String secondHeader, String city, String division,
-			String content, String tradeName, String address, String businessHours) {
+	public PromotionRecord(String imageUrl, String phoneNumber, String promotion, String header, String secondHeader, String city,
+			String division, String content, String tradeName, String address, String businessHours) {
+		this.imageUrl = imageUrl;
 		this.phoneNumber = phoneNumber;
 		this.promotion = promotion;
 		this.header = header;
@@ -46,9 +48,10 @@ public class PromotionRecord {
 	/*
 	 * the function is called when server handles completed.
 	 */
-	public PromotionRecord(long id, String phoneNumber, String promotion, String header, String secondHeader, String city, String division,
-			String content, String tradeName, String address, String businessHours) {
+	public PromotionRecord(long id, String imageUrl, String phoneNumber, String promotion, String header, String secondHeader, String city,
+			String division, String content, String tradeName, String address, String businessHours) {
 		this.id = id;
+		this.imageUrl = imageUrl;
 		this.phoneNumber = phoneNumber;
 		this.promotion = promotion;
 		this.header = header;
@@ -79,6 +82,7 @@ public class PromotionRecord {
 		try {
 			JSONObject object = new JSONObject();
 			object.put("id", id);
+			object.put("imageUrl", imageUrl);
 			object.put("phoneNumber", phoneNumber);
 			object.put("promotion", promotion);
 			object.put("header", header);
@@ -103,6 +107,7 @@ public class PromotionRecord {
 		try {
 			// Pulling items from json object
 			final long id = jsonObject.getLong("id");
+			final String imageUrl = jsonObject.getString("imageUrl");
 			final String phoneNumber = jsonObject.getString("phoneNumber");
 			final String promotion = jsonObject.getString("promotion");
 			final String header = jsonObject.getString("header");
@@ -114,8 +119,8 @@ public class PromotionRecord {
 			final String address = jsonObject.getString("address");
 			final String businessHours = jsonObject.getString("businessHours");
 
-			final PromotionRecord record = new PromotionRecord(id, phoneNumber, promotion, header, secondHeader, city, division, content,
-					tradeName, address, businessHours);
+			final PromotionRecord record = new PromotionRecord(id, imageUrl, phoneNumber, promotion, header, secondHeader, city, division,
+					content, tradeName, address, businessHours);
 			return record;
 		} catch (JSONException e) {
 			Log.w(TAG, e);
@@ -130,6 +135,7 @@ public class PromotionRecord {
 				JSONObject object = jsonArray.getJSONObject(i);
 				// Pulling items from the array
 				final long id = object.getLong("id");
+				final String imageUrl = object.getString("imageUrl");
 				final String phoneNumber = object.getString("phoneNumber");
 				final String promotion = object.getString("promotion");
 				final String header = object.getString("header");
@@ -141,8 +147,8 @@ public class PromotionRecord {
 				final String address = object.getString("address");
 				final String businessHours = object.getString("businessHours");
 
-				recordList.add(new PromotionRecord(id, phoneNumber, promotion, header, secondHeader, city, division, content, tradeName,
-						address, businessHours));
+				recordList.add(new PromotionRecord(id, imageUrl, phoneNumber, promotion, header, secondHeader, city, division, content,
+						tradeName, address, businessHours));
 			} catch (JSONException e) {
 				Log.w(TAG, e);
 			}
@@ -153,8 +159,9 @@ public class PromotionRecord {
 
 	@Override
 	public String toString() {
-		return String.format(
-				"id: %d, phone: %s, promotion: %s, header: %s/%s, city: %s%s, content: %s, tradeName: %s, address: %s, businessHours: %s",
-				id, phoneNumber, promotion, header, secondHeader, city, division, content, tradeName, address, businessHours);
+		return String
+				.format("id: %d, url: %s, phone: %s, promotion: %s, header: %s/%s, city: %s%s, content: %s, tradeName: %s, address: %s, businessHours: %s",
+						id, imageUrl, phoneNumber, promotion, header, secondHeader, city, division, content, tradeName, address,
+						businessHours);
 	}
 }
