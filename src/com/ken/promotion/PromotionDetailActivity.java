@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,7 +31,8 @@ public class PromotionDetailActivity extends Activity {
 		back.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				finish();
+				// finish();
+				startActivity(new Intent(PromotionDetailActivity.this, CourseDetailActivity.class));
 			}
 		});
 		final ImageView share = (ImageView) findViewById(R.id.promotion_detail_share_button);

@@ -4,4 +4,19 @@
     <string name="app_name">promotion</string>
     <string name="hello_world">Hello world!</string>
 
+    <!-- for promotion activity -->
+    <string name="promotion_retrieve_text">查看</string>
+    <string name="promotion_retrieve_map_text">查看地圖</string>
+    <string name="promotion_call_text">電話預約</string>
+
+    <!-- for course activity -->
+    <string name="course_deadline_text">報名截止日</string>
+    <string name="course_teacher_text">授課師資</string>
+    <string name="course_cost_text">費用</string>
+    <string name="course_location_text">上課地點</string>
+    <string name="course_consultation_text">課程諮詢人</string>
+    <string name="course_email_text">Email</string>
+    <string name="course_phone_consultation_text">電話諮詢</string>
+    <string name="course_email_consultation_text">Email 諮詢</string>
+
 </resources>

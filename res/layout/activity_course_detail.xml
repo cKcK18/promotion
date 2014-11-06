@@ -38,9 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <include
-            android:id="@+id/promotion_detail"
-            layout="@layout/layout_promotion_detail" />
+        <include layout="@layout/layout_course_detail" />
     </ScrollView>
 
 </LinearLayout>

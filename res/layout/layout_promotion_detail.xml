@@ -13,16 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginBottom="18dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
-        android:src="@android:color/black" />
+        android:layout_marginLeft="@dimen/promotion_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_gap_with_border"
+        android:src="#CCCCCC" />
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right" >
+        android:layout_marginLeft="@dimen/promotion_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_gap_with_border" >
 
         <TextView
             android:id="@+id/promotion_trade_name"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
             android:gravity="center"
-            android:text="查看"
+            android:text="@string/promotion_retrieve_text"
             android:textColor="#17C9B4"
             android:textSize="16sp" >
         </TextView>
@@ -52,8 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:layout_marginLeft="@dimen/promotion_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_gap_with_border"
         android:gravity="center"
         android:text="敦化南路一段160巷44號-3"
         android:textColor="#828282"
@@ -64,8 +64,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right" >
+        android:layout_marginLeft="@dimen/promotion_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_gap_with_border" >
 
         <TextView
             android:id="@+id/promotion_phone_number"
@@ -94,11 +94,11 @@
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="@dimen/promotion_button_margin_left"
-        android:layout_marginRight="@dimen/promotion_button_margin_right"
+        android:layout_marginLeft="@dimen/promotion_button_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_button_gap_with_border"
         android:background="#17C9B4"
         android:gravity="center"
-        android:text="查看地圖"
+        android:text="@string/promotion_retrieve_map_text"
         android:textColor="@android:color/white"
         android:textSize="18sp" >
     </TextView>
@@ -109,11 +109,11 @@
         android:layout_height="45dp"
         android:layout_gravity="center"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="@dimen/promotion_button_margin_left"
-        android:layout_marginRight="@dimen/promotion_button_margin_right"
+        android:layout_marginLeft="@dimen/promotion_button_gap_with_border"
+        android:layout_marginRight="@dimen/promotion_button_gap_with_border"
         android:background="#17C9B4"
         android:gravity="center"
-        android:text="電話預約"
+        android:text="@string/promotion_call_text"
         android:textColor="@android:color/white"
         android:textSize="18sp" >
     </TextView>

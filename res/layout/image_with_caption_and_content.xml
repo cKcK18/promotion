@@ -10,8 +10,8 @@
         android:id="@+id/image_with_caption_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:layout_marginLeft="@dimen/image_with_caption_gap_with_border"
+        android:layout_marginRight="@dimen/image_with_caption_gap_with_border"
         android:layout_marginTop="15dp"
         android:text="歡送五週年, 剪燙八五折"
         android:textColor="@android:color/black"
@@ -22,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:layout_marginLeft="@dimen/image_with_caption_gap_with_border"
+        android:layout_marginRight="@dimen/image_with_caption_gap_with_border"
         android:text="Boris-HC髮型"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
@@ -32,16 +32,16 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
-        android:src="@android:color/black" />
+        android:layout_marginLeft="@dimen/image_with_caption_gap_with_border"
+        android:layout_marginRight="@dimen/image_with_caption_gap_with_border"
+        android:src="#CCCCCC" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:layout_marginLeft="@dimen/image_with_caption_gap_with_border"
+        android:layout_marginRight="@dimen/image_with_caption_gap_with_border"
         android:orientation="horizontal" >
 
         <TextView
@@ -80,8 +80,8 @@
         android:id="@+id/image_with_caption_main_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/promotion_margin_left"
-        android:layout_marginRight="@dimen/promotion_margin_right"
+        android:layout_marginLeft="@dimen/image_with_caption_gap_with_border"
+        android:layout_marginRight="@dimen/image_with_caption_gap_with_border"
         android:text="Borsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\nBorsi-HC已經5年了, 為了回饋客戶, 活動期間剪燙八五折, 髮妝類產品六折優惠\n請立即撥打預約電話, 換個髮型, 換個心情\n"
         android:textColor="#828282"
         android:textSize="16sp"

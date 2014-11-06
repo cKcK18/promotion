@@ -1,10 +1,14 @@
 <resources>
 
-    <!-- promotion item  -->
-    <dimen name="promotion_margin_left">23dp</dimen>
-    <dimen name="promotion_margin_right">23dp</dimen>
-    
-    <dimen name="promotion_button_margin_left">18dp</dimen>
-    <dimen name="promotion_button_margin_right">18dp</dimen>
+    <!-- for image with caption -->
+    <dimen name="image_with_caption_gap_with_border">23dp</dimen>
+
+    <!-- for promotion activity -->
+    <dimen name="promotion_gap_with_border">23dp</dimen>
+    <dimen name="promotion_button_gap_with_border">18dp</dimen>
+
+    <!-- for course activity -->
+    <dimen name="course_gap_with_border">23dp</dimen>
+    <dimen name="course_button_gap_with_border">18dp</dimen>
 
 </resources>
